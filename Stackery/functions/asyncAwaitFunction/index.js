@@ -1,6 +1,6 @@
 let AWS = require('aws-sdk');
 let lambda = new AWS.Lambda();
 
-module.exports.handler = async (event) => {
+module.exports = async (event) => {
     return await lambda.getAccountSettings().promise() ;
 };
